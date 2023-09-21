@@ -13,4 +13,8 @@ import {RouterLink} from "@angular/router";
 export class HomeComponent {
   roosterList = Array.from({length: 22}, (_, i) => (i + 1).toString());
 
+  test(){
+    
+  }
+
 }
