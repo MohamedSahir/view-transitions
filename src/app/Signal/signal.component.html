@@ -1,3 +1,15 @@
+Simple Signal Component
 
+<button (click)="test()">Test Signal</button>
 
-<button (click)="test()"></button>
+<div>{{ message() }}</div>
+<div>{{name()}}</div>
+<div>{{currency()}}</div>
+<div>
+  <input type="text" [ngModel]="name()" (ngModelChange)="name.set($event)" />
+</div>
+<div>
+  <button (click)="name.set('World')">Hello World!</button>
+  <button (click)="name.set('Angular')">Hello Angular!</button>
+  <button (click)="name.set('Signals')">Hello Signals!</button>
+</div>  
